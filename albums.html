@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albums | The Weeknd</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-albums">
+    <header>
+        <div class="nav-left"><a href="index.html">Home</a><a href="bio.html">Biography</a></div>
+        <div class="logo">THE WEEKND</div>
+        <div class="nav-right"><a href="albums.html" class="active">Albums</a><a href="awards.html">Awards</a></div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Discography</h2>
+
+        <div class="wheel-container" id="wheelContainer">
+            <div class="wheel-bg-text" id="wheelBgText">XO</div>
+            <div class="wheel-scene" id="wheelScene"></div>
+            <div class="wheel-hint">Click side albums to rotate</div>
+        </div>
+
+        <!-- 详情面板 -->
+        <section class="album-detail" id="albumDetail">
+            <div class="detail-bg" id="detailBg"></div>
+            <div class="detail-scroll-content">
+                <button class="detail-close" id="detailClose">✕</button>
+                
+                <div class="detail-fixed-top">
+                    <div class="detail-cover-wrapper">
+                        <img class="detail-cover" id="detailCover" src="" alt="">
+                    </div>
+                    <div class="detail-meta">
+                        <h1 id="detailTitle"></h1>
+                        <p class="detail-artist">The Weeknd</p>
+                        <div class="meta-data-grid">
+                            <div class="meta-item"><span class="meta-label">Release</span><span class="meta-value" id="metaRelease">2020</span></div>
+                            <div class="meta-item"><span class="meta-label">Genre</span><span class="meta-value" id="metaGenre">R&B / Pop</span></div>
+                            <div class="meta-item"><span class="meta-label">Label</span><span class="meta-value" id="metaLabel">XO / Republic</span></div>
+                            <div class="meta-item"><span class="meta-label">Length</span><span class="meta-value" id="metaLength">56 min</span></div>
+                        </div>
+                        <p class="detail-desc" id="detailDesc"></p>
+                    </div>
+                </div>
+
+                <div class="player-bar">
+                    <div class="controls">
+                        <button class="ctrl-btn" id="prevBtn">◁◁</button>
+                        <button class="play-toggle" id="playToggle">▶</button>
+                        <button class="ctrl-btn" id="nextBtn">▷▷</button>
+                    </div>
+                    <div class="progress-wrap">
+                        <div class="progress-bg" id="progressBg">
+                            <div class="progress-fill" id="progressFill"></div>
+                        </div>
+                        <span class="time-display" id="timeDisplay">0:00 / 0:00</span>
+                    </div>
+                    <div class="now-playing-info">
+                        <div class="eq-bars" id="eqBars"><span></span><span></span><span></span><span></span></div>
+                        <span class="playing-title" id="playingTitle">Select a track</span>
+                    </div>
+                </div>
+
+                <div class="detail-tracks">
+                    <h2>Tracklist</h2>
+                    <ul id="trackList"></ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

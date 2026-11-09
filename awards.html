@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awards | The Weeknd</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page-awards">
+    <header>
+        <div class="nav-left"><a href="index.html">Home</a><a href="bio.html">Biography</a></div>
+        <div class="logo">THE WEEKND</div>
+        <div class="nav-right"><a href="albums.html">Albums</a><a href="awards.html" class="active">Awards</a></div>
+    </header>
+
+    <main>
+        <h2 class="section-title">Hall of Fame</h2>
+
+        <h3 class="sub-title">Career Totals</h3>
+        <div class="stats-grid">
+            <div class="stat-card" data-name="Grammy Awards" data-years="2016, 2018, 2021, 2023">
+                <div class="stat-num">4</div>
+                <div class="stat-name">Grammy<br>Awards</div>
+                <div class="stat-hint">View Years +</div>
+            </div>
+            <div class="stat-card" data-name="Billboard Music Awards" data-years="2015 - 2023 (Multiple Wins)">
+                <div class="stat-num">20</div>
+                <div class="stat-name">Billboard<br>Music Awards</div>
+                <div class="stat-hint">View Years +</div>
+            </div>
+            <div class="stat-card" data-name="Juno Awards" data-years="2013 - 2024">
+                <div class="stat-num">17</div>
+                <div class="stat-name">Juno<br>Awards</div>
+                <div class="stat-hint">View Years +</div>
+            </div>
+            <div class="stat-card" data-name="American Music Awards" data-years="2015 - 2022">
+                <div class="stat-num">6</div>
+                <div class="stat-name">American<br>Music Awards</div>
+                <div class="stat-hint">View Years +</div>
+            </div>
+            <div class="stat-card" data-name="Guinness World Records" data-years="2016, 2020, 2023">
+                <div class="stat-num">6</div>
+                <div class="stat-name">Guinness<br>Records</div>
+                <div class="stat-hint">View Records +</div>
+            </div>
+            <div class="stat-card" data-name="MTV VMAs" data-years="2020, 2021">
+                <div class="stat-num">2</div>
+                <div class="stat-name">MTV<br>VMAs</div>
+                <div class="stat-hint">View Years +</div>
+            </div>
+        </div>
+
+        <h3 class="sub-title" style="margin-top: 5rem;">Defining Moments</h3>
+        <div class="awards-grid">
+            <div class="award-card" data-year="2021" data-title="Super Bowl LV" data-desc="The Weeknd headlined the Pepsi Super Bowl LV Halftime Show. The performance was watched by over 100 million viewers and featured a stunning hall-of-mirrors set design, heavily inspired by his 'After Hours' era.">
+                <div class="card-bg-text">2021</div>
+                <div class="card-content"><span class="award-type">Performance</span><h3>Super Bowl Halftime</h3><p>Headliner</p></div>
+                <div class="click-hint">Click for details ↗</div>
+            </div>
+            <div class="award-card highlight" data-year="2023" data-title="Guinness World Record" data-desc="Officially recognized as the 'Most Popular Artist in the World' in 2023 by Guinness World Records, based on his record-breaking monthly listeners on Spotify and global chart dominance.">
+                <div class="card-bg-text">#1</div>
+                <div class="card-content"><span class="award-type">Record</span><h3>Most Popular Artist</h3><p>Guinness World Record</p></div>
+                <div class="click-hint">Click for details ↗</div>
+            </div>
+            <div class="award-card" data-year="2020" data-title="Billboard Top 10 Record" data-desc="'Blinding Lights' officially became the biggest Hot 100 hit of all time and spent an unprecedented 90 weeks in the Billboard Hot 100 Top 10, breaking the all-time record.">
+                <div class="card-content"><span class="award-type">Chart History</span><h3>90 Weeks in Top 10</h3><p>Billboard Record</p></div>
+                <div class="click-hint">Click for details ↗</div>
+            </div>
+            <div class="award-card" data-year="2016" data-title="Academy Award Nomination" data-desc="Received an Oscar nomination for Best Original Song for 'Earned It' from the Fifty Shades of Grey soundtrack. This marked his first major crossover into film and Hollywood recognition.">
+                <div class="card-content"><span class="award-type">Film & TV</span><h3>Oscar Nomination</h3><p>Best Original Song</p></div>
+                <div class="click-hint">Click for details ↗</div>
+            </div>
+            <div class="award-card" data-year="2024" data-title="Diamond Certified Singles" data-desc="Achieved 7 Diamond certified singles, meaning each has sold over 10 million units in the US. A feat achieved by only a handful of artists in music history.">
+                <div class="card-content"><span class="award-type">Sales</span><h3>7x Diamond Singles</h3><p>RIAA Certification</p></div>
+                <div class="click-hint">Click for details ↗</div>
+            </div>
+        </div>
+    </main>
+
+    <div class="award-modal" id="statsModal">
+        <div class="modal-content">
+            <button class="modal-close" id="statsModalClose">✕</button>
+            <h4 id="statsModalTitle" style="font-family: 'Bebas Neue', sans-serif; font-size: 2.5rem; color: var(--accent-blue); margin-bottom: 1rem;"></h4>
+            <p id="statsModalYears" style="color: var(--text-gray); font-size: 1.1rem; line-height: 1.8;"></p>
+        </div>
+    </div>
+
+    <div class="award-modal" id="awardModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">✕</button>
+            <div class="modal-year" id="modalYear"></div>
+            <h2 id="modalTitle"></h2>
+            <p id="modalDesc"></p>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
